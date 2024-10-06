@@ -25,13 +25,52 @@
 
 </head>
 <body>
-    <header>
+    <header class="w-11/12 mx-auto  border-b ">
 
+        <div>
+            <div class="flex justify-between py-5 items-center ">
+                <div class="">
+                 <img class="w-[120px]"  src="./image/Logo.png" alt="">
+                 
+                </div>
+                
+                  <div class="">
+                    <input id="search-btn" type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                  </div>
+                  
+              <div>
+                <button class="btn bg-red-500 text-white">Sort</button>
+              </div>
+              </div>
+        </div>
     </header>
+
+    <nav id="categories" class="py-4 mx-auto w-11/12 flex gap-8 text-center justify-center">
+
+    </nav>
 
     <main>
 
+        <section id="videos" class="w-11/12 mx-auto py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        </section>
     </main>
+
+    <!-- Open the modal using ID.showModal() method -->
+<button id="showModal" class="btn hidden" onclick="custtom.showModal()">open modal</button>
+<dialog id="custtom" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+   <div id="modal-content">
+
+   </div>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
     <footer>
 
